@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thembile Selabe — Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">TS</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#portfolio" class="nav-link">Work</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Creative Director &amp; Designer</p>
+      <h1 class="hero-name reveal-up">
+        <span class="name-line">Thembile</span>
+        <span class="name-line italic">Selabe</span>
+      </h1>
+      <p class="hero-tagline reveal-up">Crafting visual identities that<br/>speak before words do.</p>
+      <div class="hero-cta reveal-up">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-badge">
+      <svg viewBox="0 0 120 120" class="badge-ring">
+        <path id="badgeText" d="M 60,60 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"/>
+        <text font-size="11.5" fill="currentColor" letter-spacing="3">
+          <textPath href="#badgeText">GRAPHIC DESIGN • BRANDING • VISUAL ART •&nbsp;</textPath>
+        </text>
+      </svg>
+      <div class="badge-center">✦</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-img-placeholder">
+            <div class="img-inner">
+              <div class="monogram">TS</div>
+              <div class="img-decor"></div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="120">0</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="6">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="40">0</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Design is how I <em>translate</em> the world.</h2>
+          <p class="about-para">I'm Thembile Selabe — a South African creative director with a passion for intentional, story-driven design. I build brands that don't just look good, but feel deeply right.</p>
+          <p class="about-para">My work lives at the intersection of art and strategy — merging bold visual language with thoughtful communication to create experiences that linger.</p>
+          <div class="skill-tags">
+            <span class="tag">Brand Identity</span>
+            <span class="tag">Art Direction</span>
+            <span class="tag">UI Design</span>
+            <span class="tag">Typography</span>
+            <span class="tag">Print Design</span>
+            <span class="tag">Motion Graphics</span>
+          </div>
+          <a href="#contact" class="btn btn-primary mt">Work With Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title">Projects that<br/><em>made a difference</em></h2>
+      </div>
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="digital">Digital</button>
+        <button class="filter-btn" data-filter="print">Print</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #f9c6d0 0%, #e8a4b0 100%);">
+            <div class="port-label">Branding</div>
+            <div class="port-num">01</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Bloom Cosmetics</h3>
+            <p>Complete brand identity for a luxury South African beauty brand.</p>
+          </div>
+          <div class="portfolio-hover">
+            <span>View Project →</span>
+          </div>
+        </div>
+        <div class="portfolio-item large" data-category="digital">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #b8d8b0 0%, #8ec28a 100%);">
+            <div class="port-label">Digital</div>
+            <div class="port-num">02</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Savanna App UI</h3>
+            <p>Mobile app design for an eco-tourism platform.</p>
+          </div>
+          <div class="portfolio-hover">
+            <span>View Project →</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="print">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #fde8ee 0%, #f5c2cf 100%);">
+            <div class="port-label">Print</div>
+            <div class="port-num">03</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Ubuntu Magazine</h3>
+            <p>Editorial layout design for a culture &amp; lifestyle publication.</p>
+          </div>
+          <div class="portfolio-hover">
+            <span>View Project →</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="branding">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #d4ecd0 0%, #aed4a8 100%);">
+            <div class="port-label">Branding</div>
+            <div class="port-num">04</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Terra Café</h3>
+            <p>Brand identity and packaging for a farm-to-table concept.</p>
+          </div>
+          <div class="portfolio-hover">
+            <span>View Project →</span>
+          </div>
+        </div>
+        <div class="portfolio-item large" data-category="digital">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #f7b8c8 0%, #e896b0 100%);">
+            <div class="port-label">Digital</div>
+            <div class="port-num">05</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Limpopo Arts Council</h3>
+            <p>Website redesign and digital identity for a regional arts body.</p>
+          </div>
+          <div class="portfolio-hover">
+            <span>View Project →</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="print">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #c8e8c4 0%, #98cc94 100%);">
+            <div class="port-label">Print</div>
+            <div class="port-num">06</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Kgomo Packaging</h3>
+            <p>Sustainable packaging design for artisanal dairy products.</p>
+          </div>
+          <div class="portfolio-hover">
+            <span>View Project →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="services-bg">
+      <div class="blob blob-4"></div>
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">What I Offer</div>
+        <h2 class="section-title">Services built for<br/><em>ambitious brands</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">◈</div>
+          <h3>Brand Identity</h3>
+          <p>From logo creation to full brand systems — I build identities with depth, consistency, and personality that endures.</p>
+          <ul class="service-list">
+            <li>Logo Design</li>
+            <li>Brand Guidelines</li>
+            <li>Visual System</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="service-icon">◉</div>
+          <h3>Art Direction</h3>
+          <p>Strategic creative oversight for campaigns, shoots, and launches — ensuring every visual element speaks the same language.</p>
+          <ul class="service-list">
+            <li>Campaign Direction</li>
+            <li>Photography Styling</li>
+            <li>Creative Strategy</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">◈</div>
+          <h3>Digital Design</h3>
+          <p>Websites, apps, and digital experiences that translate brand vision into intuitive, beautiful interfaces.</p>
+          <ul class="service-list">
+            <li>UI/UX Design</li>
+            <li>Web Design</li>
+            <li>Social Media Kits</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">◈</div>
+          <h3>Print &amp; Packaging</h3>
+          <p>Tactile design that stands out on shelves and in hands — from editorial layouts to premium packaging solutions.</p>
+          <ul class="service-list">
+            <li>Packaging Design</li>
+            <li>Editorial Layout</li>
+            <li>Marketing Collateral</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span>Brand Identity</span><span class="sep">✦</span>
+      <span>Art Direction</span><span class="sep">✦</span>
+      <span>Visual Design</span><span class="sep">✦</span>
+      <span>Print &amp; Packaging</span><span class="sep">✦</span>
+      <span>UI / UX</span><span class="sep">✦</span>
+      <span>Typography</span><span class="sep">✦</span>
+      <span>Motion Graphics</span><span class="sep">✦</span>
+      <span>Brand Identity</span><span class="sep">✦</span>
+      <span>Art Direction</span><span class="sep">✦</span>
+      <span>Visual Design</span><span class="sep">✦</span>
+      <span>Print &amp; Packaging</span><span class="sep">✦</span>
+      <span>UI / UX</span><span class="sep">✦</span>
+      <span>Typography</span><span class="sep">✦</span>
+      <span>Motion Graphics</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's create<br/><em>something great</em></h2>
+          <p class="contact-para">Have a project in mind? I'd love to hear about it. Reach out and let's explore what we can build together.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">✉</span>
+              <span>thembile@selabe.co.za</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">◎</span>
+              <span>Lebowakgomo, Limpopo, SA</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">Behance</a>
+            <a href="#" class="social-link">Dribbble</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form-wrap">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Naledi Dlamini" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="hello@yourcompany.com" />
+            </div>
+            <div class="form-group">
+              <label for="project">Project Type</label>
+              <select id="project">
+                <option value="">Select a service…</option>
+                <option>Brand Identity</option>
+                <option>Art Direction</option>
+                <option>Digital Design</option>
+                <option>Print &amp; Packaging</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Me More</label>
+              <textarea id="message" rows="4" placeholder="Describe your project, goals, and timeline…"></textarea>
+            </div>
+            <button class="btn btn-primary full" id="sendBtn">Send Message ✦</button>
+            <div class="form-success" id="formSuccess">
+              <span>✓ Message sent — I'll be in touch soon!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <span class="footer-logo">Thembile Selabe</span>
+        <span class="footer-copy">© 2025 — All rights reserved</span>
+      </div>
+      <div class="footer-line"></div>
+      <p class="footer-tagline">Designed with intention. Built with craft.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
