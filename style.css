@@ -1,3 +1,4 @@
+cat > /mnt/user-data/outputs/style.css << 'EOF'
 /* ===========================
    CSS VARIABLES & RESET
 =========================== */
@@ -94,13 +95,33 @@ input, select, textarea, button { font-family: var(--font-body); }
   box-shadow: 0 1px 0 var(--border);
 }
 
+/* --- UPDATED NAV LOGO --- */
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--black);
-  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
+
+.nav-logo-img {
+  height: 54px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  /* removes white background on light/dark navbars */
+  mix-blend-mode: multiply;
+  transition: opacity 0.3s;
+}
+
+.nav-logo-img:hover {
+  opacity: 0.85;
+}
+
+/* when nav is scrolled (light bg), multiply works great.
+   On transparent nav (dark bg not present), show normally */
+.nav:not(.scrolled) .nav-logo-img {
+  mix-blend-mode: normal;
+}
+/* --- END UPDATED NAV LOGO --- */
 
 .nav-links {
   display: flex; gap: 2.5rem;
@@ -1039,6 +1060,8 @@ input, select, textarea, button { font-family: var(--font-body); }
   .footer-top { flex-direction: column; gap: 0.8rem; text-align: center; }
 
   .section { padding: 80px 0; }
+
+  .nav-logo-img { height: 42px; }
 }
 
 @media (max-width: 480px) {
@@ -1046,4 +1069,6 @@ input, select, textarea, button { font-family: var(--font-body); }
   .about-stats { flex-direction: column; gap: 0.75rem; }
   .hero-cta { flex-direction: column; }
   .contact-form-wrap { padding: 1.5rem; }
+  .nav-logo-img { height: 36px; }
 }
+EOF
